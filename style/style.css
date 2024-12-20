@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.burger {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px; 
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+}
+
+.banner {
+    background-image: url('https://i.pinimg.com/originals/f9/6f/1b/f96f1ba6ea5a79802154876b2bce2443.jpg'); 
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.filtratsiya{
+    margin-bottom: 30px;
+    gap: 20px;
+    display: flex;
+}
+
+.films{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(39, 107, 235);
+    color: white;
+    border:1px solid rgb(39, 107, 235);
+    border-radius: 5px;
+}
+
+.filtrbtn{
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.catalog {
+    margin: 20px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    position: relative; 
+    margin-bottom: 20px; 
+}
+
+.image-container {
+    position: relative; 
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 10px; 
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.movie-title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.release-year {
+    font-size: 14px;
+    display: block; 
+    margin-top: 5px; 
+}
+
+.rating {
+    margin-top: 10px; 
+    font-size: 16px; 
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #282c34;
+    color: white;
+    position: relative;
+    margin-top: 30px;
+    bottom: 0;
+    width: 100%;
+}
+
+.zagolov{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+section{
+    margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .filtratsiya{
+        margin-bottom: 30px;
+        gap: 20px;
+        display: flex;
+        width: 380px;
+        flex-wrap: wrap;
+    }
+}

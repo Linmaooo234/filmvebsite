@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название фильма - MovieStream</title>
+    <link rel="stylesheet" href="../style/onefilm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">MovieStream</div>
+        <div class="burger" id="burger">&#9776;</div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#index.html">Главная</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        document.getElementById('burger').addEventListener('click', function() {
+            var nav = document.getElementById('nav');
+            nav.classList.toggle('nav-active');
+        });
+    </script>
+
+    <div class="movie-details">
+        <div class="movie-poster">
+            <img src="../media/film1.jpg" alt="Название фильма">
+        </div>
+        <div class="movie-info">
+            <h1>Миссия «Красный» смотреть онлайн</h1>
+            <p class="description">Описание: В центре внимания кража Санта-Клауса. Главным злодеем является сильнейший враг, который похищает Санту из Северного полюса, и таким образом ставит под угрозу Рождество. Чтобы спасти ситуацию, к делу подключается оперативник, который обладает необычайными навыками и опыт в отслеживании целей. Вместе с ним работает самый опытный следопыт, который решает помочь вернуть Клауса и восстановить рождественский дух.</p>
+            <p class="description">В ходе приключений персонажи исследуют волшебные места и встречают загадочных созданий, которые населяют мир Санты. На их пути много весёлых ситуаций и неожиданных поворотов, подчеркивающих значимость дружбы и командной работы. Важным моментом сюжета становится необходимость объединить усилия, чтобы предотвратить настоящую катастрофу и вернуть Санта-Клауса домой до того, как праздник будет окончательно испорчен.</p>
+            <div class="ratings">
+            <div class="rating">
+                <strong>Название:Red One</strong> 
+                <strong>Дата выхода:6 ноября 2024</strong>
+                <strong>Режиссер:Джейк Кэздан</strong> 
+                <strong>Страна:США</strong> 
+            </div>
+            <div class="rating">
+                <strong>Время: 1 ч 42 мин</strong> 
+                <strong>Дата выхода:6 ноября 2024</strong>
+                <strong>Перевод: на русском языке</strong> 
+                <strong>Качество: HD 720 - 1080p</strong> 
+            </div>
+            </div>
+            <div class="player">
+                <h2>Смотреть фильм</h2>
+                <video controls>
+                    <source src="../media/videoplayback.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+
+            <div class="review-form">
+                <h2>Оставьте отзыв</h2>
+                <form action="#" method="post">
+                    <textarea placeholder="Ваш отзыв" required></textarea>
+                    <br>
+                    <label for="rating">Ваша оценка:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">Выберите оценку</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <br>
+                    <button type="submit">Отправить отзыв</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MovieStream. Все права защищены.</p>
+    </footer>
+</body>
+</html>

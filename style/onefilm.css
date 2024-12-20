@@ -1,0 +1,169 @@
+body {
+    font-family: "Montserrat", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.burger {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px; 
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+}
+
+.movie-details {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.movie-poster img {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.movie-info {
+    max-width: 600px;
+}
+
+.description {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #888;
+}
+
+.ratings{
+    display: flex;
+}
+
+.rating {
+    margin-top: 20px;
+    font-weight: bold;
+    margin-right: 60px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.player {
+    margin: 20px 0;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.review-form {
+    margin-top: 20px;
+}
+
+.review-form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.review-form select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+img{
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .movie-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-poster {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
